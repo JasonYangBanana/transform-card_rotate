@@ -1,0 +1,33 @@
+body {
+  background-color: #909090; }
+  body .card-wrap {
+    width: 382px;
+    height: 342px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    margin: 100px auto 0; }
+    body .card-wrap:hover .card {
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg); }
+    body .card-wrap .card, body .card-wrap .front, body .card-wrap .back {
+      width: 382px;
+      height: 342px; }
+    body .card-wrap .card {
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transition: all ease-in-out 2s;
+      -o-transition: all ease-in-out 2s;
+      transition: all ease-in-out 2s;
+      position: relative;
+      display: block; }
+    body .card-wrap .front, body .card-wrap .back {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    body .card-wrap .front {
+      z-index: 2; }
+    body .card-wrap .back {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
